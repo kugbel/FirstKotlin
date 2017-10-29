@@ -32,6 +32,7 @@ fun main(args: Array<String>) {
 
     var x = 2
 
+    
     when (x) {
         1 -> print("x == 1")
         2 -> print("x == 2")

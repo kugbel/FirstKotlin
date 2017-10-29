@@ -1,4 +1,4 @@
-# MyFirstKotlin
+# FirstKotlin
 
 This is a project to show the possibilities in Kotlin.
 

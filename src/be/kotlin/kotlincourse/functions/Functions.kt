@@ -32,6 +32,8 @@ fun hello(){
     println("Hello")
 }
 
+fun max(a: Int, b: Int)= if (a > b) a else b
+
 fun throwingExceptions(): Nothing{
     throw Exception("This function throws an exception")
 }

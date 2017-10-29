@@ -19,13 +19,10 @@ interface Interface2 {
 
 class Class1and2: Interface1, Interface2{
     override fun funA() {
-        println("Class1and2 funA")
-
         //refer with the super keyword
         super<Interface2>.funA()
         super<Interface1>.funA()
     }
-
 }
 
 

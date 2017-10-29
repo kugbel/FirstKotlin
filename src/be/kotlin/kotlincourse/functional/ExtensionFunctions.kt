@@ -16,6 +16,13 @@ fun String.toTitleCase(): String{
     return this.split(" ").joinToString(" ") {it.capitalize() }
 }
 
+fun String.lastChar(): Char = this.get(this.length - 1)
+
+fun String.Hello() {
+    println("hello, world!")
+}
+
+
 fun main(args: Array<String>) {
     println("Hello ".hello())
 
@@ -27,6 +34,22 @@ fun main(args: Array<String>) {
 
     cust.makePrefered()
     cust.makePrefered("test")
+
+    val str = "Batman"
+    str.hello() // Prints out “hello, world!”
+    "Robin".hello() // Same here
+
+    println("Batman".capStuff()) // Prints out “BATMAN”
+    println("Robin".prefixStuff("Hey").capStuff()) // Prints out “HEY ROBIN”
+
+}
+
+fun String.capStuff(): String {
+    return this.toUpperCase()
+}
+
+fun String.prefixStuff(prefix: String): String {
+    return "$prefix $this"
 }
 
 class Customer(){

@@ -30,5 +30,30 @@ fun main(args: Array<String>) {
         "Value" -> println("Is a value")
     }
 
+    var x = 2
+
+    when (x) {
+        1 -> print("x == 1")
+        2 -> print("x == 2")
+        else -> {
+            print("x is neither 1 nor 2")
+        }
+    }
+    x = 1
+    when (x) {
+        0, 1 -> print("x == 0 or 1")
+        else -> print("neither 0 nor 1")
+    }
+
+    val validNumbers = 1..19
+    when (x) {
+        in 1..10 -> print("x is in the range")
+        in validNumbers -> print("x is valid")
+        !in 10..20 -> print("x is outside the range")
+        else -> print("none of the above")
+    }
+
+
+
     println(result)
 }
